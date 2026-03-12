@@ -5,7 +5,7 @@ pipeline {
 
         stage('Checkout') {
             steps {
-                git 'https://github.com/<your-username>/fintech-devops-microservice.git'
+                git 'https://github.com/VigneshYR/fintech-devops-microservice.git'
             }
         }
 
