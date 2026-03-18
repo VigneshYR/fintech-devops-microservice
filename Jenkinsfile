@@ -8,7 +8,7 @@ pipeline {
         }
         stage('Build') {
             steps {
-                sh 'docker build -t fintech-app -f fintech-devops-microservice/docker/Dockerfile .'
+                sh 'docker build -t fintech-app -f docker/Dockerfile .'
             }
         }
 
