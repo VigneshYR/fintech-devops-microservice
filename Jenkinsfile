@@ -3,7 +3,7 @@ pipeline {
     stages{
         stage('Checkout Code'){
             steps{
-                git branch: 'main', url: 'https://github.com/VigneshYR/ci-cd-aws-pipeline'
+                git branch: 'main', url: 'https://github.com/VigneshYR/fintech-devops-microservice.git'
             }
         }
         stage('Build') {
