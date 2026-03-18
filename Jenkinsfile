@@ -1,14 +1,11 @@
 pipeline {
     agent any
-
-    stages {
-
-        stage('Checkout') {
-            steps {
-                git 'https://github.com/VigneshYR/fintech-devops-microservice.git'
+    stages{
+        stage('Checkout Code'){
+            steps{
+                git branch: 'main', url: 'https://github.com/VigneshYR/ci-cd-aws-pipeline'
             }
         }
-
         stage('Build') {
             steps {
                 sh 'docker build -t fintech-app -f docker/Dockerfile .'
